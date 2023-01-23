@@ -28,6 +28,9 @@ jobs:
       - attach_workspace:
           at: ~/project
       - run:
+          name: build
+          command: yarn build
+      - run:
           name: deploy
           command: yarn deploy
 
