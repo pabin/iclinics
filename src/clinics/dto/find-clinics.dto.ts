@@ -1,5 +1,6 @@
 import { IsNotEmpty, IsString, ValidateIf } from 'class-validator';
 
+// Ignoring validation for unit testing, can be tested in e2e only
 export class FindClinicsDto {
   @ValidateIf((o) => !o.state && !o.openingFrom && !o.openingTo)
   @IsNotEmpty()

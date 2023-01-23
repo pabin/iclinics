@@ -65,10 +65,31 @@
     "transform": {
       "^.+\\.(t|j)s$": "ts-jest"
     },
-    "collectCoverageFrom": [
-      "**/*.(t|j)s"
-    ],
     "coverageDirectory": "../coverage",
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "moduleNameMapper": {
+      "axios": "axios/dist/node/axios.cjs"
+    },
+    "collectCoverageFrom": [
+      "**/*.(t|j)s",
+      "!main.ts"
+    ],
+    "testPathIgnorePatterns": [
+      "/src/clinics/dto/"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/src/clinics/dto/"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
+  },
+  "engines": {
+    "node": "18"
   }
 }
