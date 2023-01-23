@@ -55,3 +55,17 @@ yarn deploy:local
 * Search by state name <br />
 * Search by opening time and closing time <br />
 * Search by all query fields <br />
+
+### Demo examples
+```
+https://x2xsnts3zulqm3e4b6ihcqovqa0hxoux.lambda-url.ap-south-1.on.aws/clinics/?name=clinic
+```
+```
+https://x2xsnts3zulqm3e4b6ihcqovqa0hxoux.lambda-url.ap-south-1.on.aws/clinics/?state=fl
+```
+```
+https://x2xsnts3zulqm3e4b6ihcqovqa0hxoux.lambda-url.ap-south-1.on.aws/clinics/?name=clinic&state=ca
+```
+```
+https://x2xsnts3zulqm3e4b6ihcqovqa0hxoux.lambda-url.ap-south-1.on.aws/clinics/?openingFrom=10:00&openingTo=23:00
+```
