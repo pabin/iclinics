@@ -39,11 +39,13 @@ yarn test:cov
 ### AWS lambda deployment
 > Warning: Should have logged in to aws cli
 ```
+yarn build
 yarn deploy
 ```
 
 ### Serverless deployment local test
 ```
+yarn build
 yarn deploy:local
 ```
 
