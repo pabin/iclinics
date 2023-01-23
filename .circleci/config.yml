@@ -21,6 +21,16 @@ jobs:
           paths:
             - .
 
+  deploy_to_production:
+    docker:
+      - image: cimg/node:18.13.0
+    steps:
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: deploy
+          command: yarn deploy
+
 workflows:
   build:
     jobs:
@@ -39,3 +49,13 @@ workflows:
               only:
                 - main
 
+      - deploy_to_production:
+          context:
+            - aws-credentials
+          requires:
+            - setup_and_test
+            - hold_for_deploy_to_production
+          filters:
+            branches:
+              only:
+                - main
