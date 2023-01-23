@@ -69,3 +69,13 @@ https://x2xsnts3zulqm3e4b6ihcqovqa0hxoux.lambda-url.ap-south-1.on.aws/clinics/?n
 ```
 https://x2xsnts3zulqm3e4b6ihcqovqa0hxoux.lambda-url.ap-south-1.on.aws/clinics/?openingFrom=10:00&openingTo=23:00
 ```
+
+### Screenshots
+### Postman Response result
+![ScreenShot](https://github.com/pabin/iclinics/blob/main/src/assets/screenshots/iclinics_img1.png?raw=true)
+
+### CircleCI workflow for CI/CD
+![ScreenShot](https://github.com/pabin/iclinics/blob/main/src/assets/screenshots/iclinics_img2.png?raw=true)
+
+### Unit Test Results with 100% coverage
+![ScreenShot](https://github.com/pabin/iclinics/blob/main/src/assets/screenshots/iclinics_img3.png?raw=true)
